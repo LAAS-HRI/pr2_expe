@@ -8,11 +8,6 @@ project(pr2_expe)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  ar_track_alvar
-  overworld
-  pr2_moveit_config
-  pr2_mtc
-  ontologenius
   roscpp
   rospy
   std_msgs
