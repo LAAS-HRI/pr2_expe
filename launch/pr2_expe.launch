@@ -1,0 +1,44 @@
+<launch>
+    
+    <arg name="fake" default="false" />
+    <arg name="use_octomap" default="false" />
+
+    <!-- Launch ar track alvar with the given tags-->
+    <include file="$(find pr2_expe)/launch/pr2_perception.launch"/>
+
+    <!-- Fix the robot into the world-->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_odomcombined_link_publisher" args="6 6.7 0 0 0 1 0 map odom_combined" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_basefootprint_link_publisher" args="0 0 0 0 0 0 1 odom_combined base_footprint" />
+
+
+    <!-- Launch ontologenius -->
+    <arg name="language" default="en"/>
+    <arg name="intern_file" default="none"/>
+    <arg name="files" default="
+        $(find pr2_expe)/ontologies/common_ground.owl
+        $(find pr2_expe)/ontologies/dt_objects.owl
+        $(find pr2_expe)/ontologies/dt_humans.owl
+        $(find pr2_expe)/ontologies/actions_emulation.owl
+    "/>
+    <node name="ontologenius_core" pkg="ontologenius" type="ontologenius_multi" output="screen" args="-l $(arg language) -i $(arg intern_file) $(arg files)"> </node>
+    <node name="ontologenius_gui" pkg="ontologenius" type="ontoloGUI" output="screen"> </node>
+
+
+    <!-- Launch overworld -->
+    <node name="overworld" pkg="overworld" type="overworld_node" output="screen" respawn="false"/>
+    
+
+    <!-- Launch Moveit -->
+    <include file="$(find pr2_moveit_config)/launch/pr2_moveit.launch">
+        <arg name="fake" value="$(arg fake)" />
+        <arg name="use_octomap" value="$(arg use_octomap)" />
+    </include>
+
+    <!-- Launch Rviz -->
+    <include file="$(find pr2_moveit_config)/launch/moveit_rviz.launch"/>
+
+    <!-- Launch Motion Planning Node -->
+    <node name="pr2_tasks_node" pkg="pr2_mtc" type="pr2_tasks" output="screen" respawn="false"/>
+    
+
+</launch>
