@@ -3,9 +3,6 @@
     <arg name="fake" default="false" />
     <arg name="use_octomap" default="false" />
 
-    <!-- Launch ar track alvar with the given tags-->
-    <include file="$(find pr2_expe)/launch/pr2_perception.launch"/>
-
     <!-- Fix the robot into the world-->
     <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_odomcombined_link_publisher" args="6 6.7 0 0 0 1 0 map odom_combined" />
     <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_basefootprint_link_publisher" args="0 0 0 0 0 0 1 odom_combined base_footprint" />
