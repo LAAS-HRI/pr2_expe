@@ -10,7 +10,13 @@
 
 	<arg name="bundle_files" default=" $(find pr2_expe)/tags/cube_g.xml
 									   $(find pr2_expe)/tags/cube_r_1.xml
-									   $(find pr2_expe)/tags/cube_r_2.xml"/>
+									   $(find pr2_expe)/tags/cube_r_2.xml
+									   $(find pr2_expe)/tags/cube_b_1.xml
+									   $(find pr2_expe)/tags/cube_b_2.xml
+									   $(find pr2_expe)/tags/round_table.xml
+									   $(find pr2_expe)/tags/table_1.xml
+									   $(find pr2_expe)/tags/table.xml
+									   $(find pr2_expe)/tags/table_lack.xml"/>
 
 	<node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" />
 
