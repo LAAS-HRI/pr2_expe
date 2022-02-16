@@ -49,13 +49,6 @@
     </owl:AnnotationProperty>
     
 
-
-    <!-- file:/home/gsarthou/Robots/Pr2/Semantic/catkin_ws/src/exp_director_task/dt_resources/ontologies/ontologenius#label -->
-
-    <owl:AnnotationProperty rdf:about="file:/home/gsarthou/Robots/Pr2/Semantic/catkin_ws/src/exp_director_task/dt_resources/ontologies/ontologenius#label"/>
-    
-
-
     <!-- ontologenius#label -->
 
     <owl:AnnotationProperty rdf:about="ontologenius#label"/>
@@ -707,7 +700,18 @@
     <!-- common_ground#Entity -->
 
     <owl:Class rdf:about="common_ground#Entity"/>
-    
+
+
+    <!-- common_ground#ConsoleTable -->
+
+    <owl:Class rdf:about="common_ground#ConsoleTable">
+        <rdfs:subClassOf rdf:resource="common_ground#Furniture"/>
+        <rdfs:subClassOf rdf:resource="common_ground#Support"/>
+        <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
+        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/ikea_console.stl</hasMesh>
+        <rdfs:label xml:lang="fr">console</rdfs:label>
+        <rdfs:label xml:lang="en">console table</rdfs:label>
+    </owl:Class>  
 
 
     <!-- common_ground#Fan -->
@@ -1129,7 +1133,7 @@
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
+        <owl:members rdf:parseType="Collection">Console
             <rdf:Description rdf:about="common_ground#ConsoleTable"/>
             <rdf:Description rdf:about="common_ground#Drawer"/>
             <rdf:Description rdf:about="common_ground#Fan"/>

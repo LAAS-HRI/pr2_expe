@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="dt_objects#"
+<rdf:RDF xmlns="pr2_objects#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="dt_objects"/>
+    <owl:Ontology rdf:about="pr2_objects"/>
 
 
 
@@ -51,23 +51,73 @@
     ///////////////////////////////////////////////////////////////////////////////////////
     -->
 
-    <owl:NamedIndividual rdf:about="dt_objects#cube_g">
+    <owl:NamedIndividual rdf:about="pr2_objects#table_1">
+        <rdf:type rdf:resource="common_ground#ConsoleTable"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">54</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/ikea_console.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="pr2_objects#table_lack">
+        <rdf:type rdf:resource="common_ground#LowTable"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">72</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/ikea_low_table_lack.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="pr2_objects#round_table">
+        <rdf:type rdf:resource="common_ground#RoundTable"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">78</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/round_table.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="pr2_objects#table_3">
+        <rdf:type rdf:resource="common_ground#SecondTable"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">80</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/ikea_kallax.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="pr2_objects#table">
+        <rdf:type rdf:resource="common_ground#SecondTable"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">240</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/table.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="pr2_objects#cube_g">
         <rdf:type rdf:resource="common_ground#Cube"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">90</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/cube.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
-    <owl:NamedIndividual rdf:about="dt_objects#cube_r_1">
+    <owl:NamedIndividual rdf:about="pr2_objects#cube_r_1">
         <rdf:type rdf:resource="common_ground#Cube"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">108</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/cube.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
-    <owl:NamedIndividual rdf:about="dt_objects#cube_r_2">
+    <owl:NamedIndividual rdf:about="pr2_objects#cube_r_2">
         <rdf:type rdf:resource="common_ground#Cube"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">114</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/cube.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="pr2_objects#cube_g">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">90</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/cube.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="pr2_objects#cube_b_1">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">102</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/cube.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="pr2_objects#cube_b_2">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">96</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/cube.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
@@ -78,4 +128,4 @@
 
 
 
-<!-- Generated by the dt_objects https://sarthou.github.io/dt_objects/ -->
+<!-- Generated by the pr2_objects -->
