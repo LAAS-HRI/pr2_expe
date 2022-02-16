@@ -36,6 +36,10 @@
 
     <!-- Launch Motion Planning Node -->
     <node name="pr2_tasks_node" pkg="pr2_mtc" type="pr2_tasks" output="screen" respawn="false"/>
+
+    <!-- Launch actionlib clients -->
+    <node name="pr2_tasks_node_plan_client" pkg="actionlib" type="axclient.py" output="screen" respawn="false" args="/pr2_tasks_node/plan"/>
+    <node name="pr2_tasks_node_execute_client" pkg="actionlib" type="axclient.py" output="screen" respawn="false" args="/pr2_tasks_node/execute"/>
     
 
 </launch>
