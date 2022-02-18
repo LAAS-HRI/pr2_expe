@@ -52,31 +52,31 @@
     -->
 
     <owl:NamedIndividual rdf:about="pr2_objects#table_1">
-        <rdf:type rdf:resource="common_ground#ConsoleTable"/>
+        <rdf:type rdf:resource="common_ground#Table"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">54</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/ikea_console.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="pr2_objects#table_lack">
-        <rdf:type rdf:resource="common_ground#LowTable"/>
+        <rdf:type rdf:resource="common_ground#Table"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">72</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/ikea_low_table_lack.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="pr2_objects#round_table">
-        <rdf:type rdf:resource="common_ground#RoundTable"/>
+        <rdf:type rdf:resource="common_ground#Table"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">78</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/round_table.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="pr2_objects#table_3">
-        <rdf:type rdf:resource="common_ground#SecondTable"/>
+        <rdf:type rdf:resource="common_ground#Table"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">80</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/ikea_kallax.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="pr2_objects#table">
-        <rdf:type rdf:resource="common_ground#SecondTable"/>
+        <rdf:type rdf:resource="common_ground#Table"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">240</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://pr2_expe/mesh/table.stl</common_ground:hasMesh>
     </owl:NamedIndividual>

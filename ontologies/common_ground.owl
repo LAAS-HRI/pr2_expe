@@ -714,6 +714,17 @@
     </owl:Class>  
 
 
+    <!-- common_ground#Table -->
+
+    <owl:Class rdf:about="common_ground#Table">
+        <rdfs:subClassOf rdf:resource="common_ground#Furniture"/>
+        <rdfs:subClassOf rdf:resource="common_ground#Support"/>
+        <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
+        <rdfs:label xml:lang="en">table</rdfs:label>
+        <rdfs:label xml:lang="fr">table</rdfs:label>
+    </owl:Class>
+
+
     <!-- common_ground#Fan -->
 
     <owl:Class rdf:about="common_ground#Fan">
